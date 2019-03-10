@@ -1,0 +1,1283 @@
+body, html {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bg-black {
+  background-color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.bg-black-solid {
+  background-color: black;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+.txt-white {
+  color: white;
+}
+
+.btn-primary {
+  border: 1.5px solid black;
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+}
+
+.btn-primary:hover {
+  background-color: black;
+  color: yellow;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+}
+
+.btn-secondary {
+  border: 1.5px solid yellow;
+  text-decoration: none;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+  color: yellow;
+  padding: 10px 20px;
+}
+
+.btn-secondary:hover {
+  background-color: yellow;
+  color: black;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+}
+
+.shape {
+  -webkit-clip-path: polygon(100% 0%, 0% 0%, 0 90%, 30% 90%, 35% 85%, 40% 90%, 50% 100%, 60% 90%, 65% 85%, 70% 90%, 100% 90%);
+  clip-path: polygon(100% 0%, 0% 0%, 0 90%, 30% 90%, 35% 85%, 40% 90%, 50% 100%, 60% 90%, 65% 85%, 70% 90%, 100% 90%);
+}
+
+.mt-5 {
+  margin-top: 5em;
+}
+
+.mt-3 {
+  margin-top: 3em;
+}
+
+.mt-2 {
+  margin-top: 2.5em;
+}
+
+.container {
+  padding: 2em 8em;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.85) !important;
+  -webkit-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+}
+
+.navbar {
+  position: fixed;
+  padding: 20px;
+  z-index: 1;
+  width: 100%;
+  text-align: right;
+}
+
+.navbar img {
+  position: relative;
+  float: left;
+  z-index: 1;
+}
+
+.navbar ul {
+  position: relative;
+  right: 50px;
+  list-style-type: none;
+  margin: 0;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.navbar ul li {
+  display: inline;
+  padding: 20px 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: yellow;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.navbar ul li input[type="submit"] {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.navbar ul li input[type="submit"]:hover {
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  color: yellow;
+  cursor: pointer;
+}
+
+.navbar ul li:last-child a {
+  border: 2px solid yellow;
+  padding: 8px 15px;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.navbar ul li:last-child a:hover {
+  background-color: yellow;
+  color: black;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.hero video {
+  width: 100%;
+  opacity: 0.7;
+}
+
+.hero-text {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  text-transform: uppercase;
+}
+
+.hero-text h1 {
+  position: relative;
+  left: -50%;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+}
+
+.hero-text h2 {
+  position: relative;
+  left: -50%;
+  color: white;
+  text-align: center;
+  top: -20px;
+}
+
+.g-head {
+  font-size: 3em;
+  margin-bottom: 0;
+  background-color: yellow;
+  display: inline-block;
+  width: 45%;
+  padding-top: 10px;
+  padding-left: 6px;
+  border-left: 8px solid black;
+}
+
+.g-subhead {
+  font-size: 1.5em;
+  margin: 0 0 2em 0;
+  color: #242424;
+}
+
+.gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[5];
+      grid-template-columns: repeat(5, auto);
+}
+
+.gallery .card {
+  margin: 5px;
+  overflow: hidden;
+  position: relative;
+  background-color: yellow;
+  -webkit-transition: background-color .5s;
+  transition: background-color .5s;
+}
+
+.gallery .card img {
+  width: calc(100%);
+  opacity: 0.8;
+  -webkit-transform: translate3d(0, -20px, 0) scale(1.2);
+          transform: translate3d(0, -20px, 0) scale(1.2);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.gallery .card .caption {
+  position: absolute;
+  top: 0;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.gallery .card .caption h3 {
+  font-weight: bold;
+  font-size: 1em;
+  text-transform: uppercase;
+  background-color: black;
+  display: inline-block;
+  padding: .3em .6em;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+.gallery .card .caption .additional {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  opacity: 0;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.gallery .card .caption .additional p {
+  margin-bottom: 20px;
+}
+
+.gallery .card .caption .additional a {
+  display: inline-block;
+  background: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 14px 6px;
+  color: black;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+  border: 1px solid white;
+}
+
+.gallery .card .caption .additional a:hover {
+  background: black;
+  color: white;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+  border: 1px solid black;
+}
+
+.gallery .card .caption .additional input[type="submit"] {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  margin-left: 5px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  padding: 10px 14px 6px;
+  font-weight: bold;
+}
+
+.gallery .card .caption .additional input[type="submit"]:hover {
+  background: white;
+  color: black;
+}
+
+.gallery .card .caption::before {
+  content: '';
+  border-top: 40px solid white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 30px;
+  left: -75%;
+  height: 100%;
+  -webkit-transform: rotateZ(-45deg) translate3d(0, -30%, 0);
+          transform: rotateZ(-45deg) translate3d(0, -30%, 0);
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.gallery .card:hover {
+  background: black;
+}
+
+.gallery .card:hover img {
+  -webkit-transform: translate3d(0, 0, 0) scale(1.03);
+          transform: translate3d(0, 0, 0) scale(1.03);
+  opacity: .4;
+}
+
+.gallery .card:hover .additional {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.gallery .card:hover .caption::before {
+  -webkit-transform: rotateZ(-45deg) translate3d(0, 0, 0);
+          transform: rotateZ(-45deg) translate3d(0, 0, 0);
+}
+
+.banner {
+  position: relative;
+}
+
+.banner .banner-text {
+  color: yellow;
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.banner .banner-text span {
+  background-color: yellow;
+  color: black;
+  padding: 0px 10px;
+}
+
+.banner a {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 1em;
+  font-weight: bold;
+  margin-left: 15em;
+  text-transform: uppercase;
+}
+
+.arrow {
+  text-align: center;
+  position: absolute;
+  top: 550px;
+  left: 49.3%;
+}
+
+.bounce {
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+.full-page {
+  height: 100vh;
+}
+
+.user-form {
+  overflow: hidden;
+  text-align: center;
+  padding: 2em 5em 3em 5em;
+}
+
+.user-form h1 {
+  font-size: 2.3em;
+  margin-bottom: 0;
+  color: white;
+}
+
+.user-form p {
+  font-size: 1.1em;
+  margin: 0 0 2em 0;
+  color: white;
+}
+
+.user-form a {
+  position: relative;
+  top: 35px;
+}
+
+.user-form form {
+  position: relative;
+  display: block;
+}
+
+.user-form form input {
+  display: block;
+  margin-bottom: 15px;
+  width: 93%;
+  border: .1px solid black;
+  padding: 12px 10px;
+}
+
+.user-form form input[type="password"]:last-of-type {
+  margin-bottom: 30px;
+}
+
+.user-form form input[type="submit"] {
+  background: none;
+  border: 2px solid yellow;
+  color: white;
+  width: 60%;
+  font-weight: bold;
+  font-size: 15px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  padding: 10px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.user-form form input[type="submit"]:hover {
+  color: black;
+  background-color: yellow;
+  font-weight: bold;
+}
+
+.user-form a {
+  padding: 6px 30px;
+  font-weight: bold;
+  display: inline-block;
+  width: 40%;
+  text-decoration: none;
+  color: white;
+}
+
+.user-form .btnclose {
+  position: absolute;
+  float: right;
+  right: -85px;
+  top: 2px;
+}
+
+.user-form .create {
+  margin-top: 10px;
+  font-size: 0.8em;
+  width: 70%;
+}
+
+.user-form::before {
+  content: '';
+  border-top: 80px solid yellow;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 30px;
+  left: -93%;
+  height: 0;
+  -webkit-transform: rotateZ(-45deg) translate3d(0, 0, 0);
+          transform: rotateZ(-45deg) translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.search-bar form input {
+  padding: 4px;
+  width: 20%;
+  margin: 0 20px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #787800;
+  color: white;
+  outline: none;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+.search-bar form input:focus {
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  border-bottom: 2px solid yellow;
+}
+
+.search-bar form input[type="date"] {
+  display: none;
+  padding: 3px;
+  opacity: 0;
+}
+
+.search-bar form input[type="button"] {
+  width: 10%;
+  background: none;
+  border: 2px solid yellow;
+  font-weight: bold;
+  color: white;
+  padding: 5px 4px;
+}
+
+.search-bar form input[type="button"]:hover {
+  width: 10%;
+  background-color: yellow;
+  border: 2px solid yellow;
+  font-weight: bold;
+  color: black;
+  padding: 5px 4px;
+}
+
+.search-bar form select {
+  padding: 5px;
+  width: 20%;
+  margin: 0 20px;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #787800;
+  color: white;
+}
+
+.search-bar form select:focus {
+  outline: none;
+  border-bottom: 2px solid yellow;
+  color: #787800;
+}
+
+.event {
+  padding: 100px;
+}
+
+.event img {
+  width: 500px;
+}
+
+.event .details {
+  display: inline-block;
+  position: absolute;
+  padding: 0px 40px;
+}
+
+.event .details h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.event .details .e-type {
+  position: relative;
+}
+
+.event .details .e-type p {
+  display: inline;
+  background-color: black;
+  color: white;
+  padding: 2px 10px 5px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.event .details .event-detail {
+  border-left: 8px solid black;
+  background-color: yellow;
+  margin-top: 30px;
+  padding: 10px;
+  width: 600px;
+}
+
+.event .details .event-detail p {
+  padding: 2px;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.event .details .description {
+  width: 630px;
+  text-align: justify;
+}
+
+.event .details input[type="submit"] {
+  background: none;
+  border: 2px solid black;
+  padding: 7px 45px;
+  font-weight: bold;
+  -webkit-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
+}
+
+.event .details input[type="submit"]:hover {
+  background-color: yellow;
+  border: 2px solid black;
+}
+
+.footer {
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.footer .main-section {
+  margin-top: 2em;
+}
+
+.footer .main-section h1 {
+  margin: 0 0 8px;
+  font-size: 2.5em;
+}
+
+.footer .main-section p {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: capitalize;
+  background-color: black;
+  color: yellow;
+  display: inline;
+  padding: 6px 15px;
+}
+
+.footer .main-section form {
+  margin-top: 2em;
+}
+
+.footer .main-section form input[type="text"] {
+  background: none;
+  border: 3px solid #969600;
+  padding: 8px 20px;
+  font-size: 15px;
+  text-align: center;
+  color: black;
+  width: 300px;
+  text-transform: capitalize;
+  outline: none;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.footer .main-section form input[type="text"]:focus {
+  border: 3px solid black;
+}
+
+.footer .main-section form input[type="text"]::-webkit-input-placeholder {
+  color: #969600;
+}
+
+.footer .main-section form input[type="text"]:-ms-input-placeholder {
+  color: #969600;
+}
+
+.footer .main-section form input[type="text"]::-ms-input-placeholder {
+  color: #969600;
+}
+
+.footer .main-section form input[type="text"]::placeholder {
+  color: #969600;
+}
+
+.footer .main-section form input[type="submit"] {
+  background: black;
+  border: 3px solid black;
+  border: 3px solid black;
+  padding: 8px 20px;
+  font-weight: bold;
+  font-size: 15px;
+  outline: none;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  color: yellow;
+}
+
+.footer .main-section form input[type="submit"]:hover {
+  background-color: #323232;
+  border: 3px solid #323232;
+  color: yellow;
+}
+
+.footer .sub-section {
+  margin: 3em;
+}
+
+.footer .sub-section p {
+  margin: 5px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.footer .sub-section .social {
+  margin-top: 0;
+}
+
+.footer .sub-section .social a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  padding: 0px 10px;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.footer .sub-section .social a:hover {
+  color: #323232;
+}
+
+.trademark {
+  background-color: black;
+  margin: 30px;
+  padding: .8em 8em;
+  color: yellow;
+  margin: auto 0 0;
+}
+
+.trademark p {
+  display: inline-block;
+}
+
+.trademark .terms {
+  float: right;
+  margin: 16px 0;
+}
+
+.trademark .terms a {
+  display: inline-block;
+  padding: 0 10px;
+  text-decoration: none;
+  color: yellow;
+}
+
+.contact {
+  text-align: center;
+  height: 81vh;
+  border-bottom: 10vh solid black;
+}
+
+.contact h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+  margin-top: 2em;
+  margin-bottom: 0;
+  background-color: black;
+  color: yellow;
+  padding-bottom: 5px;
+  width: 300px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact p {
+  margin-top: 5px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 2.5em;
+}
+
+.contact form {
+  text-align: center;
+}
+
+.contact form input {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 40px;
+  text-align: center;
+  font-size: 15px;
+  outline: none;
+  background: none;
+  border: 3px solid #969600;
+}
+
+.contact form input[type="text"]::-webkit-input-placeholder {
+  color: #969600;
+}
+
+.contact form input[type="text"]:-ms-input-placeholder {
+  color: #969600;
+}
+
+.contact form input[type="text"]::-ms-input-placeholder {
+  color: #969600;
+}
+
+.contact form input[type="text"]::placeholder {
+  color: #969600;
+}
+
+.contact form input[type="text"]:focus {
+  border: 3px solid black;
+  -webkit-transition: border .5s ease;
+  transition: border .5s ease;
+}
+
+.contact form input[type="submit"] {
+        color: aliceblue;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  font-weight: bold;
+  border-color: wheat;
+  padding: 8px 60px;
+}
+
+.contact form input[type="submit"]:hover {
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  background-color: black;
+  color: yellow;
+}
+
+.contact form textarea {
+  margin: 10px;
+  width: 790px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: none;
+  border: 4px solid #969600;
+  outline: none;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.contact form textarea:focus {
+  border: 4px solid black;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.login {
+  text-align: center;
+  height: 81vh;
+  border-bottom: 10vh solid black;
+}
+
+.login h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+  margin-top: 2em;
+  margin-bottom: 0;
+  background-color: black;
+  color: yellow;
+  padding-bottom: 5px;
+  width: 300px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login p {
+  margin-top: 5px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 2.5em;
+}
+
+.login form {
+  text-align: center;
+}
+
+.login form input {
+  display: block;
+  padding: 8px 40px;
+  text-align: center;
+  font-size: 15px;
+  outline: none;
+  background: none;
+  border: 3px solid #969600;
+  margin: 5px auto 10px auto;
+}
+
+.login form input[type="text"] {
+  width: 300px;
+}
+
+.login form input[type="text"]::-webkit-input-placeholder {
+  color: #969600;
+}
+
+.login form input[type="text"]:-ms-input-placeholder {
+  color: #969600;
+}
+
+.login form input[type="text"]::-ms-input-placeholder {
+  color: #969600;
+}
+
+.login form input[type="text"]::placeholder {
+  color: #969600;
+}
+
+.login form input[type="text"]:focus {
+  border: 3px solid black;
+  -webkit-transition: border .5s ease;
+  transition: border .5s ease;
+}
+
+.login form input[type="password"] {
+  width: 300px;
+}
+
+.login form input[type="password"]::-webkit-input-placeholder {
+  color: #969600;
+}
+
+.login form input[type="password"]:-ms-input-placeholder {
+  color: #969600;
+}
+
+.login form input[type="password"]::-ms-input-placeholder {
+  color: #969600;
+}
+
+.login form input[type="password"]::placeholder {
+  color: #969600;
+}
+
+.login form input[type="password"]:focus {
+  border: 3px solid black;
+  -webkit-transition: border .5s ease;
+  transition: border .5s ease;
+}
+
+.login form input[type="submit"] {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+  border-color: black;
+  padding: 8px 60px;
+}
+
+.login form input[type="submit"]:hover {
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  background-color: black;
+  color: yellow;
+}
+
+.login a {
+  text-decoration: none;
+  color: #969600;
+}
+
+.login a:hover {
+  color: black;
+  -webkit-transition: color .5s ease;
+  transition: color .5s ease;
+}
+
+.signup {
+  text-align: center;
+  height: 81vh;
+  border-bottom: 10vh solid black;
+}
+
+.signup h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+  margin-top: 2em;
+  margin-bottom: 0;
+  background-color: black;
+  color: yellow;
+  padding-bottom: 5px;
+  width: 500px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.signup p {
+  margin-top: 5px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 2.5em;
+}
+
+.signup form {
+  text-align: center;
+}
+
+.signup form input {
+  display: block;
+  padding: 8px 40px;
+  text-align: center;
+  font-size: 15px;
+  outline: none;
+  background: none;
+  border: 3px solid #969600;
+  margin: 5px auto 10px auto;
+}
+
+.signup form input[type="text"] {
+  width: 300px;
+}
+
+.signup form input[type="text"]::-webkit-input-placeholder {
+  color: #969600;
+}
+
+.signup form input[type="text"]:-ms-input-placeholder {
+  color: #969600;
+}
+
+.signup form input[type="text"]::-ms-input-placeholder {
+  color: #969600;
+}
+
+.signup form input[type="text"]::placeholder {
+  color: #969600;
+}
+
+.signup form input[type="text"]:focus {
+  border: 3px solid black;
+  -webkit-transition: border .5s ease;
+  transition: border .5s ease;
+}
+
+.signup form input[type="password"] {
+  width: 300px;
+}
+
+.signup form input[type="password"]::-webkit-input-placeholder {
+  color: #969600;
+}
+
+.signup form input[type="password"]:-ms-input-placeholder {
+  color: #969600;
+}
+
+.signup form input[type="password"]::-ms-input-placeholder {
+  color: #969600;
+}
+
+.signup form input[type="password"]::placeholder {
+  color: #969600;
+}
+
+.signup form input[type="password"]:focus {
+  border: 3px solid black;
+  -webkit-transition: border .5s ease;
+  transition: border .5s ease;
+}
+
+.signup form input[type="submit"] {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+  border-color: black;
+  padding: 8px 60px;
+}
+
+.signup form input[type="submit"]:hover {
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  background-color: black;
+  color: yellow;
+}
+
+.signup a {
+  text-decoration: none;
+  color: #969600;
+}
+
+.signup a:hover {
+  color: black;
+  -webkit-transition: color .5s ease;
+  transition: color .5s ease;
+}
+
+.create-event {
+  text-align: center;
+  height: 81vh;
+  border-bottom: 10vh solid black;
+}
+
+.create-event h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+  background-color: black;
+  color: yellow;
+  padding-bottom: 5px;
+  width: 500px;
+  position: relative;
+  margin: 2em auto 30px auto;
+}
+
+.create-event p {
+  margin-top: 5px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 2.5em;
+}
+
+.create-event form {
+  text-align: center;
+}
+
+.create-event form div {
+  margin: 5px;
+}
+
+.create-event form input {
+  background: none;
+  border: 3px solid #969600;
+  padding: 8px 40px;
+  text-align: center;
+  font-size: 15px;
+  outline: none;
+}
+
+.create-event form input:focus {
+  border-color: black;
+  -webkit-transition: border-color .4s ease;
+  transition: border-color .4s ease;
+}
+
+.create-event form input[type="date"] {
+  background: none;
+  border: 3px solid #969600;
+  padding: 5.7px 52.5px;
+  text-align: center;
+  font-size: 15px;
+  outline: none;
+}
+
+.create-event form input[type="date"]:focus {
+  border-color: black;
+  -webkit-transition: border-color .4s ease;
+  transition: border-color .4s ease;
+}
+
+.create-event form input[type="time"] {
+  background: none;
+  border: 3px solid #969600;
+  padding: 5.6px 79px;
+  text-align: center;
+  font-size: 15px;
+  outline: none;
+}
+
+.create-event form input[type="time"]:focus {
+  border-color: black;
+  -webkit-transition: border-color .4s ease;
+  transition: border-color .4s ease;
+}
+
+.create-event form input[type="file"] {
+  display: none;
+}
+
+.create-event form .custom-file-upload {
+  border: 3px solid #969600;
+  display: block;
+  padding: 5.6px 79px;
+  width: 365px;
+  margin: 0 auto 15px;
+  font-weight: bold;
+  color: #969600;
+  cursor: pointer;
+}
+
+.create-event form input[type="submit"] {
+  color: black;
+  font-weight: bold;
+}
+
+.create-event form input[type="submit"]:hover {
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  background-color: black;
+  color: yellow;
+  border-color: black;
+}
+
+.create-event form select {
+  background: none;
+  border: 3px solid #969600;
+  padding: 7px 45px;
+  text-align: center;
+  font-size: 15px;
+  outline: none;
+}
+
+.create-event form select:hover {
+  outline: none;
+  background: none;
+}
+
+.create-event form select:focus {
+  border-color: black;
+  -webkit-transition: border-color .4s ease;
+  transition: border-color .4s ease;
+}
+
+.create-event form .parti {
+  width: 70px;
+  height: 32.5px;
+  padding: 0;
+}
+
+.create-event form textarea {
+  margin: 5px;
+  width: 502px;
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: none;
+  border: 4px solid #969600;
+  outline: none;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.create-event form textarea:focus {
+  border: 4px solid black;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.create-event a {
+  text-decoration: none;
+  color: #969600;
+}
+
+.create-event a:hover {
+  color: black;
+  -webkit-transition: color .5s ease;
+  transition: color .5s ease;
+}
+/*# sourceMappingURL=main.css.map */
